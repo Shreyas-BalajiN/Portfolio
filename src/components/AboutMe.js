@@ -4,7 +4,7 @@ import { SiJavascript, SiTailwindcss, SiNodedotjs, SiReact, SiExpress, SiSpringb
 import {DiJava} from "react-icons/di";
 function AboutMe() {
   return (
-    <div className='w-screen h-screen bg-no-repeat bg-cover size-auto bg-slate-700 justify-start flex' style={{backgroundImage:`url(${ConBg})`}}>
+    <div id="AboutMe" className='w-screen h-screen bg-no-repeat bg-cover size-auto bg-slate-700 justify-start flex' style={{backgroundImage:`url(${ConBg})`}}>
     <div className='ml-32'>
     <h1 className='text-5xl text-orange-500 mt-20 font-bold font-sans'>About Me</h1>
     <p className='text-white mt-7 text-lg' style={{width:'35rem'}}>

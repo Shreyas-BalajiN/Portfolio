@@ -25,7 +25,7 @@ export default function Land() {
         changeExt(!ext)
   }
   return (
-<div
+<div id="Home"
   className={bg ? 'bg-sky-400 relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed' : 'bg-slate-700 relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed'}
   style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', filter: bri?'brightness(90%)':'brightness(35%)'}}
 >

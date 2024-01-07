@@ -16,7 +16,7 @@
   }
 
   .side-bar-icons{
-    @apply h-8 w-8 mt-6 mb-4 mx-auto hover:bg-gray-500 hover:rounded-lg
+    @apply h-8 w-8 mt-6 mb-4 mx-auto hover:bg-gray-500 hover:rounded-lg cursor-pointer
   }
   .side-bar-info{
     @apply absolute p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-800 text-xs font-bold transition-all duration-100 origin-left scale-0

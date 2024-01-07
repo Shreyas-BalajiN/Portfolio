@@ -6,10 +6,10 @@ import { IoCall } from "react-icons/io5";
 function Sidebar() {
   return (
     <div className='side-bar'>
-    <SidebarIcon icon={<FaHome size='28'/>} text="Home"/>
-    <SidebarIcon icon={<FaInfo size='28'/>} text="About Me"/>
-    <SidebarIcon icon={<IoMdDocument size='28' />}text="Resume" />
-    <SidebarIcon icon={<IoCall size='28'/>} text="Contact Me"/>
+    <a href="#Home"><SidebarIcon icon={<FaHome size='28'/>} text="Home"/></a>
+    <a href="#AboutMe"><SidebarIcon icon={<FaInfo size='28'/>} text="About Me"/></a>
+    <a href="#Resume"><SidebarIcon icon={<IoMdDocument size='28' />}text="Resume" /></a>
+    <a href="#ContactMe"><SidebarIcon icon={<IoCall size='28'/>} text="Contact Me"/></a>
     </div>
   )
 }
