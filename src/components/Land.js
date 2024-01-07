@@ -26,15 +26,15 @@ export default function Land() {
   }
   return (
 <div
-  className={bg ? 'bg-sky-400 relative w-screen h-full items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed' : 'bg-slate-700 relative w-full h-full items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed'}
+  className={bg ? 'bg-sky-400 relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed' : 'bg-slate-700 relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-center bg-fixed'}
   style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', filter: bri?'brightness(90%)':'brightness(35%)'}}
 >
 <div className="relative">
-       <div className={`opacity-0 absolute left-48 top-48 ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col items-start`} style={{ filter: 'brightness(100%)'}}>
+       <div className={`opacity-0 absolute left-36 top-48 ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col items-start`} style={{ filter: 'brightness(100%)'}}>
           <h1 className='text-3xl'>Hi, Im Shreyas Balaji Nagaraja </h1>
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
-         {!bg&& <h1 className='text-lg'> Now that we are in dark mode, lets get started</h1>}
+         {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
           
         </div>
 
