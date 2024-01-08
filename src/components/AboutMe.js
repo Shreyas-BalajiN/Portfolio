@@ -1,6 +1,6 @@
 import React from 'react'
 import ConBg from '../Assets/ConBg.jpg'
-import { SiJavascript, SiTailwindcss, SiNodedotjs, SiReact, SiExpress, SiSpringboot, SiHtml5, SiCss3, SiPython, SiFlask, SiGooglecloud, SiAmazonaws } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiNodedotjs, SiReact, SiExpress, SiSpringboot, SiHtml5, SiCss3, SiPython, SiFlask, SiGooglecloud, SiAmazonaws, SiAngular } from "react-icons/si";
 import {DiJava} from "react-icons/di";
 function AboutMe() {
   return (
@@ -30,6 +30,7 @@ function AboutMe() {
     <div className='mt-4'>
     <SiPython color='white' size='2.5rem' className='float-left mr-3'/>
     <SiFlask color='gray' size='2.5rem' className='float-left mr-3'/>
+    <SiAngular color='red' size='2.5rem' className='float-left mr-3'/>
     <SiGooglecloud color='blue' size='2.5rem' className='float-left mr-3'/>
     </div> 
     </div>

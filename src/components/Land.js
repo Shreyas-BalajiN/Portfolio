@@ -35,6 +35,7 @@ export default function Land() {
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
+         <a href='http://localhost:3000/Shreyas_Nagaraja_CV_final.pdf' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
           
         </div>
 
