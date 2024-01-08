@@ -1,15 +1,12 @@
 import React from 'react'
 import Code from '../Assets/Code.jpg'
-import { useState } from 'react'
 function Card({name, text, img={Code}, techstack, gitlink, desc, deplink}) {
 
   return (
     <div class="group [perspective:1000px] float-left w-64 mr-4 mt-20 h-96">
     <div class="relative h-full bg-gray-800  border-orange-300 border-2 w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         <div className='absolute inset-0'>
-        <a href="#">
         <img className="rounded-t-lg" src={Code} alt="" />
-    </a>
     <div className="p-3  [backface-visibility:hidden]">
             <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{text}</p>

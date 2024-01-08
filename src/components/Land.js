@@ -35,16 +35,16 @@ export default function Land() {
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
-         <a href='http://localhost:3000/Shreyas_Nagaraja_CV_final.pdf' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
+         <a href='www.google.com' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
           
         </div>
 
-        {!ext&& <img src={Stars} className='w-48 h-56 top-10 transition-all float-left'/>}   
-        {!ext&&<img src={Stars} className='w-56 h-56 top-10 transition-all float-left ml-40 rotate-90'/>}   
-        {!ext&&<img src={Stars} className='w-48 h-56 top-10 transition-all float-left ml-96 rotate-45'/>}   
-        {!ext&&<img src={Stars} className='w-48 h-56 top-10 absolute right-28 transition-all float-left ml-96 rotate-45'/>}   
-        {ext&&<img src={Birds} className='w-30 h-24 absolute right-28 top-10 transition-all'/>}
-        <img src={cel ? Sun : Moon} className='w-30 h-24 absolute right-28 top-10 transition-all' onClick={handleChange} />
+        {!ext&& <img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='w-56 h-56 top-10 transition-all float-left ml-40 rotate-90'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left ml-96 rotate-45'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 absolute right-28 transition-all float-left ml-96 rotate-45'/>}   
+        {ext&&<img src={Birds} alt="Birds"className='w-30 h-24 absolute right-28 top-10 transition-all'/>}
+        <img src={cel ? Sun : Moon} className='w-30 h-24 absolute right-28 top-10 transition-all' alt="cel" onClick={handleChange} />
     </div>
     {/* <img src={Mountain} className='bg-cover w-screen h-screen' style={{ filter: bri?'brightness(90%)':'brightness(35%)' }}alt="Mountain"/> */}
     </div>
