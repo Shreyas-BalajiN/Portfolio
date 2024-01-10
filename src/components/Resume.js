@@ -3,8 +3,8 @@ import ResBg from '../Assets/ResBg-min.jpg'
 import Card from './Card'
 function Resume() {
   return (
-    <div id="Resume" className='w-screen h-screen bg-cover flex overflow-hidden' style={{backgroundImage:`url(${ResBg})`}}>
-    <div className='ml-32'>
+    <div id="Resume" className='w-screen scr-length bg-cover flex overflow-hidden' style={{backgroundImage:`url(${ResBg})`}}>
+    <div className='left-margin'>
     <h1 className='text-5xl text-orange-500 mt-16 font-bold font-sans'>My Projects</h1>
     <h1 className='text-lg text-orange-500 mt-4 font-bold font-sans'>Try Hovering</h1>
     <Card name="Go-meals" text="Meal Subscription and delivery website" techstack={["ReactJS", "SpringBoot", "MySQL", "JUnit"]} desc="Go-Meals is built using React JS for the front end, ensuring a responsive and interactive user interface. The backend is powered by SpringBoot, with Java handling server-side logic. Data is stored and managed in a MySQL database. The entire system is thoroughly tested using JUnit." gitlink="https://github.com/Shreyas-BalajiN/Go-Meals"/>

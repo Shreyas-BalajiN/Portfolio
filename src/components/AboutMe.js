@@ -4,10 +4,10 @@ import { SiJavascript, SiTailwindcss, SiNodedotjs, SiReact, SiExpress, SiSpringb
 import {DiJava} from "react-icons/di";
 function AboutMe() {
   return (
-    <div id="AboutMe" className='w-screen h-screen bg-no-repeat bg-cover size-auto bg-slate-700 justify-start flex' style={{backgroundImage:`url(${ConBg})`}}>
-    <div className='ml-32'>
+    <div id="AboutMe" className='bg-no-repeat bg-cover bg-slate-700 justify-start flex w-screen scr-length' style={{backgroundImage:`url(${ConBg})`}}>
+    <div className='left-margin'>
     <h1 className='text-5xl text-orange-500 mt-20 font-bold font-sans'>About Me</h1>
-    <p className='text-white mt-7 text-lg' style={{width:'35rem'}}>
+    <p className='text-white mt-7 text-lg t-width'>
          Hello! 👋 I'm a dedicated Full Stack Developer with one year of experience, 
          specializing in JavaScript and Java. Proficient in ReactJS, Spring Boot, and NodeJS, 
          I've contributed to diverse projects, crafting seamless user interfaces and robust server-side solutions.

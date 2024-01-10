@@ -30,13 +30,15 @@ export default function Land() {
   style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', filter: bri?'brightness(90%)':'brightness(35%)'}}
 >
 <div className="relative">
-       <div className={`opacity-0 absolute left-36 top-48 ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col items-start`} style={{ filter: 'brightness(100%)'}}>
+       <div className='aboutme'>
+       <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
           <h1 className='text-3xl'>Hi, Im Shreyas Balaji Nagaraja </h1>
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
-         <a href='www.google.com' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
+         <a href='https://shreyas-bn-portfolio.netlify.app' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
           
+        </div>
         </div>
 
         {!ext&& <img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left'/>}   
