@@ -32,6 +32,9 @@
   .card-margin{
     @apply ml-0
   }
+  .bg-position{
+    @apply bg-bottom
+  }
 }
 
 @media (min-width: 641px) {
@@ -62,6 +65,9 @@ padding-top: 0.5px;
 }
 .card-margin{
   @apply ml-56
+}
+.bg-position{
+  @apply bg-center
 }
 }
   .side-bar-info{
