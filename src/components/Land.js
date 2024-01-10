@@ -32,7 +32,7 @@ export default function Land() {
 <div className="relative">
        <div className='aboutme'>
        <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
-          <h1 className='text-3xl'>Hi, Im Shreyas Balaji Nagaraja </h1>
+          <h1 className='text-3xl'>Hi, I'm Shreyas Balaji Nagaraja </h1>
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
