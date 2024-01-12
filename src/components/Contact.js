@@ -9,7 +9,7 @@ function Contact() {
     <h1 className='text-5xl text-orange-500 mt-16 font-bold font-sans'>Contact Me</h1>
     <div className="w-72 h-80 card-margin mt-36 bg-slate-800 bg-opacity-90 rounded-lg justify-center items-center flex flex-col shadow duration-500 float-left border-2 border-orange-300">
     <SiMaildotru className='w-36 h-24 mt-9' color='white' /><br />
-    <a href="mailto:shreyas.nagaraja@dal.ca" className='p-4'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Mail Me</button></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsckBVJStvpbQXjQzNRcLjwVsggCjZLWMmXQdfmghcpRgJnnvNLXWJKCHvwxPkngQkBsV" className='p-4'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Mail Me</button></a>
     </div>
     <div className="w-72 h-80 card-margin mt-36 bg-slate-800 bg-opacity-90 rounded-lg justify-center items-center flex flex-col shadow duration-500 float-left border-2 border-orange-300">
     <SiLinkedin className='w-36 h-24 mt-9' color='white' /><br />

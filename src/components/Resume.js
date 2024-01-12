@@ -1,9 +1,9 @@
 import React from 'react'
-import ResBg from '../Assets/ResBg-min.jpg'
+import ResBg from '../Assets/ResBg.jpg'
 import Card from './Card'
 function Resume() {
   return (
-    <div id="Resume" className='w-screen scr-length bg-cover flex overflow-hidden' style={{backgroundImage:`url(${ResBg})`}}>
+    <div id="Resume" className='w-screen scr-length bg-cover flex overflow-hidden border-b-2 border-white' style={{backgroundImage:`url(${ResBg})`}}>
     <div className='left-margin'>
     <h1 className='text-5xl text-orange-500 mt-16 font-bold font-sans'>My Projects</h1>
     <h1 className='text-lg text-orange-500 mt-4 font-bold font-sans'>Try Hovering</h1>

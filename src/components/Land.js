@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Stars from '../Assets/Stars.png'
 import Birds from '../Assets/Birds.png'
 import { useEffect } from 'react'
+import {SiGithub, SiLinkedin, SiMaildotru} from 'react-icons/si'
 export default function Land() {
   const [bg,changeBg]=useState(true);
   const [cel, changeCel]=useState(true);
@@ -31,12 +32,17 @@ export default function Land() {
 >
 <div className="relative">
        <div className='aboutme'>
-       <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
+       <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white brightness-200'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
           <h1 className='text-3xl'>Hi, I'm Shreyas Balaji Nagaraja </h1>
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
-         <a href='https://shreyas-bn-portfolio.netlify.app' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 border-black'>Download Resume</button></a>
+         <a href='Shreyas_Nagaraja_CV.pdf' download="Shreyas_Resume.pdf"><button className='rounded-xl font-semibold p-1 mt-3 opacity-90 hover:bg-sky-200 text-black bg-slate-50 border-b-4 border-l-2 hover:[border-bottom-width:6px] hover:border-l-4 border-black'>Download Resume</button></a>
+         <div className='mt-2 flex'>
+         <a href="https://github.com/Shreyas-BalajiN"><SiGithub size={25} className='ml-1 hover:scale-125'/></a>
+         <a href='https://www.linkedin.com/in/shreyas-balaji-nagaraja-9b06ba1b9/'><SiLinkedin size={25} className='ml-5 hover:scale-125'/></a>
+         <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsckBVJStvpbQXjQzNRcLjwVsggCjZLWMmXQdfmghcpRgJnnvNLXWJKCHvwxPkngQkBsV"><SiMaildotru size={25} className='ml-5 hover:scale-125'/></a>
+         </div>
           
         </div>
         </div>
