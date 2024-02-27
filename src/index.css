@@ -28,10 +28,23 @@
     @apply h-full
   }
   .card-margin{
-    @apply ml-0
+    @apply ml-8
   }
   .bg-position{
     @apply bg-bottom
+  }
+  .resumePage{
+    @apply w-screen scr-length bg-cover bg-center flex overflow-hidden border-b-2 border-white;
+    background-image: url('./Assets/verbg.png');
+  }
+  .icons{
+    @apply mt-4 mb-8;
+  }
+  .cardpos{
+    @apply flex flex-col items-center justify-center w-screen -ml-6 mb-4;
+  }
+  .cardposcon{
+    @apply flex flex-col items-center justify-center w-screen -ml-12 mb-8;
   }
 }
 
@@ -70,5 +83,11 @@ padding-top: 0.5px;
   .side-bar-info{
     @apply absolute p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-800 text-xs font-bold transition-all duration-100 origin-left scale-0
   }
-  
+  .resumePage{
+    @apply w-screen scr-length bg-cover bg-center flex overflow-hidden border-b-2 border-x-yellow-700;
+    background-image: url('./Assets/ResBg.jpg');
+  }
+  .icons{
+    @apply mt-4 mb-20;
+  }
 }

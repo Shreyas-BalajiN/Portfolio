@@ -14,6 +14,7 @@ export default function Land() {
   const [ext, changeExt]=useState(true);
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
+    console.log(window.innerWidth)
     const timeout = setTimeout(() => {
       setIsVisible(true);
     }, 500);

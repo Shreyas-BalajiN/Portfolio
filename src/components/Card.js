@@ -21,7 +21,7 @@ function Card({name, text, img={Code}, techstack, gitlink, desc, deplink}) {
         </div>
 
 
-        <div class="relative p-3 h-full w-full rounded-xl bg-gray-800  text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+        <div className="relative p-3 h-full w-full rounded-xl bg-gray-800  text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
         <div className="mt-2 flex flex-col">
         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Description</h5>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{desc}</p>
