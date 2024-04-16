@@ -13,6 +13,9 @@ export default function Land() {
   const [bri, changeBri]=useState(true);
   const [ext, changeExt]=useState(true);
   const [isVisible, setIsVisible] = useState(false);
+  const [dusk, setdusk]=useState(false);
+  const [dawn, setDawn]=useState(false);
+  const [light, setLight]= useState(true);
   useEffect(() => {
     console.log(window.innerWidth)
     const timeout = setTimeout(() => {
@@ -21,14 +24,27 @@ export default function Land() {
     return () => clearTimeout(timeout);
   }, []);
   const handleChange=()=>{
-        changeBg(!bg)
+        setdusk(true)
+        
+      setTimeout(()=>{
         changeCel(!cel)
         changeBri(!bri)
         changeExt(!ext)
+        changeBg(!bg)
+        setLight(!light)
+        setDawn(true)
+      },2000) 
+        setTimeout(()=>{
+          setdusk(false)
+          
+        },2000)
+        setTimeout(()=>{
+          setDawn(false)
+        },4000)
   }
   return (
 <div id="Home"
-  className={bg ? 'bg-sky-400 relative w-screen bg-position items-center text-center justify-center bg-no-repeat bg-fixed' : 'bg-slate-700 relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-position bg-fixed'}
+  className={`${bg ? ' relative w-screen bg-position items-center text-center justify-center bg-no-repeat bg-fixed' : ' relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-position bg-fixed'} ${light?'bg-sky-400 transition-all [transition-duration:2800ms]':'bg-slate-700 transition-all [transition-duration:2800ms] '}`}
   style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', height:'100vh', filter: bri?'brightness(90%)':'brightness(35%)'}}
 >
 <div className="relative">
@@ -53,7 +69,7 @@ export default function Land() {
         {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left ml-96 rotate-45'/>}   
         {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 absolute right-28 transition-all float-left ml-96 rotate-45'/>}   
         {ext&&<img src={Birds} alt="Birds"className='w-30 h-24 absolute right-28 top-10 transition-all'/>}
-        <img src={cel ? Sun : Moon} className='w-30 h-24 absolute right-28 top-10 transition-all' alt="cel" onClick={handleChange} />
+        <img src={cel ? Sun : Moon} id="cel" className={`w-30 h-24 absolute right-28 top-10 ${dusk?'transformation':''} ${dawn?'transformation2':''}`} alt="cel" onClick={handleChange} />
     </div>
     {/* <img src={Mountain} className='bg-cover w-screen h-screen' style={{ filter: bri?'brightness(90%)':'brightness(35%)' }}alt="Mountain"/> */}
     </div>

@@ -15,7 +15,7 @@ function AboutMe() {
           I thrive in collaborative environments and continuously explore emerging technologies to enhance my skills. </p>
     <h1 className='text-2xl text-orange-500 mt-5'>My Playground</h1>
     <div className='mt-4'>
-     <SiHtml5 color='Orange' size='2.5rem' className='float-left mr-3'/>
+     <div className='group'><SiHtml5 color='Orange' size='2.5rem' className='float-left mr-3'/><span className='side-bar-info group-hover:scale-100 [margin-left:67px] -mt-10'>HTML</span></div>
      <SiCss3 color='Blue' size='2.5rem' className=' mr-3 float-left'/>
      <SiJavascript color='yellow' size='2.5rem' className='float-left mr-3'/>
      <DiJava color='red' size='2.5rem' className='mr-3 bg-white rounded-lg float-left'/>
