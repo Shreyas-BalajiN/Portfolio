@@ -45,12 +45,12 @@ export default function Land() {
   return (
 <div id="Home"
   className={`${bg ? ' relative w-screen bg-position items-center text-center justify-center bg-no-repeat bg-fixed' : ' relative w-screen h-screen items-center text-center justify-center bg-no-repeat bg-cover bg-position bg-fixed'} ${light?'bg-sky-400 transition-all [transition-duration:2800ms]':'bg-slate-700 transition-all [transition-duration:2800ms] '}`}
-  style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', height:'100vh', filter: bri?'brightness(90%)':'brightness(35%)'}}
+  style={{ backgroundImage: `url(${Mountain})`, backgroundSize:'100% auto', width:'100wh', height:'100vh', filter: bri?'brightness(90%)':'brightness(45%)'}}
 >
 <div className="relative">
        <div className='aboutme'>
-       <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white brightness-200'} transition-opacity brightness-200 duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
-          <h1 className='text-3xl'>Hi, I'm Shreyas Balaji Nagaraja </h1>
+       <div className={`opacity-0 absolute ${bg ? 'text-black':'text-white '} transition-opacity  duration-1000 ease-in-out ${isVisible ? 'opacity-100' : ''} flex flex-col text`} style={{ filter: 'brightness(100%)'}}>
+          <h1 className='text-3xl '>Hi, I'm Shreyas Balaji Nagaraja </h1>
           <h1 className='text-lg'>A full stack developer </h1>
          {bg&& <h1 className='text-lg'>Before getting to know me, <b>try clicking on the sun.</b> </h1>}
          {!bg&& <h1 className='text-lg'> Ta-da its night, now lets get started</h1>}
@@ -64,10 +64,10 @@ export default function Land() {
         </div>
         </div>
 
-        {!ext&& <img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left'/>}   
-        {!ext&&<img src={Stars} alt="stars" className='w-56 h-56 top-10 transition-all float-left ml-40 rotate-90'/>}   
-        {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 transition-all float-left ml-96 rotate-45'/>}   
-        {!ext&&<img src={Stars} alt="stars" className='w-48 h-56 top-10 absolute right-28 transition-all float-left ml-96 rotate-45'/>}   
+        {!ext&& <img src={Stars} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='stars w-56 h-56 top-10 transition-all float-left ml-40 rotate-90'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left ml-96 rotate-45'/>}   
+        {!ext&&<img src={Stars} alt="stars" className='stars w-48 h-56 top-10 absolute right-28 transition-all float-left ml-96 rotate-45'/>}   
         {ext&&<img src={Birds} alt="Birds"className='w-30 h-24 absolute right-28 top-10 transition-all'/>}
         <img src={cel ? Sun : Moon} id="cel" className={`w-30 h-24 absolute right-28 top-10 ${dusk?'transformation':''} ${dawn?'transformation2':''}`} alt="cel" onClick={handleChange} />
     </div>

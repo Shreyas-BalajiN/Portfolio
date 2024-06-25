@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 function Resume() {
   return (
-    <div id="Resume" className='resumePage'>
+    <div id="Resume" className='resumePage -ml-1'>
     <div className='left-margin'>
     <h1 className='text-5xl text-orange-500 mt-16 font-bold font-sans'>My Projects</h1>
     <h1 className='text-lg text-orange-500 mt-4 font-bold font-sans flex-wrap'>Try Hovering</h1>

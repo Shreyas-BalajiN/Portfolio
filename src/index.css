@@ -12,6 +12,9 @@
     transition: transform ease-in-out 2s;
   }
   @media (max-width: 640px) {
+  .stars{
+    @apply -scale-75 -ml-8;
+  }
     .side-bar {
       @apply bg-slate-50 mt-3 h-8 rounded-2xl items-center justify-start sticky w-screen scale-95 border-b-4 border-l-2 border-black flex ;
   transition: 0.5s;
