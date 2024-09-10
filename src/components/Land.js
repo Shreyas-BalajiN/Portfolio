@@ -58,7 +58,7 @@ export default function Land() {
          <div className='mt-2 flex'>
          <a href="https://github.com/Shreyas-BalajiN"><SiGithub size={25} className='ml-1 hover:scale-125'/></a>
          <a href='https://www.linkedin.com/in/shreyas-balaji-nagaraja-9b06ba1b9/'><SiLinkedin size={25} className='ml-5 hover:scale-125'/></a>
-         <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsckBVJStvpbQXjQzNRcLjwVsggCjZLWMmXQdfmghcpRgJnnvNLXWJKCHvwxPkngQkBsV"><SiMaildotru size={25} className='ml-5 hover:scale-125'/></a>
+         <a href="mailto:shreyasbalajin@gmail.com"><SiMaildotru size={25} className='ml-5 hover:scale-125'/></a>
          </div>
           
         </div>
