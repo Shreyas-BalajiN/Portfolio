@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import ContactBg from '../Assets/ContactBg2.jpg'
 import { SiMaildotru } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
