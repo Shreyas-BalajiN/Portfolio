@@ -1,10 +1,14 @@
 import React from 'react'
-import ConBg from '../Assets/ConBg.jpg'
+import Abog from '../Assets/Abog.png'
+import Stars from '../Assets/Stars.png'
+import Birds from '../Assets/Birds.png'
 import { SiJavascript, SiTailwindcss, SiNodedotjs, SiReact, SiExpress, SiSpringboot, SiHtml5, SiCss3, SiPython, SiFlask, SiGooglecloud, SiAmazonaws, SiAngular, SiCsharp } from "react-icons/si";
 import {DiJava} from "react-icons/di";
-function AboutMe() {
+import Sun from '../Assets/Sun.png'
+import Moon from '../Assets/Moon.png'
+function AboutMe({light}) {
   return (
-    <div id="AboutMe" className='bg-no-repeat bg-cover border-b-2 border-white bg-slate-700 justify-start flex w-screen scr-length' style={{backgroundImage:`url(${ConBg})`}}>
+    <div id="AboutMe" className={`bg-no-repeat bg-position bg-bottom bg-cover border-b-2 border-white ${light? 'bg-sky-400 brightness-90':'bg-slate-700 brightness-50'} justify-start flex w-screen scr-length`} style={{backgroundImage:`url(${Abog})`}}>
     <div className='left-margin'>
     <h1 className='text-5xl text-orange-500 mt-20 font-bold font-sans'>About Me</h1>
     <p className='text-white mt-7 text-lg t-width'>
@@ -35,7 +39,14 @@ function AboutMe() {
     <SiGooglecloud color='blue' size='2.5rem' className='float-left mr-3'/>
     </div> 
     </div>
-
+    {!light&& <img src={Stars} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left scale-75'/>}   
+    {light&& <img src={Birds} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left l scale-75'/>}   
+    <br/>
+    <img src={light ? Sun : Moon} id="cel" className={`celest w-30 h-24 absolute right-28 top-10 mt-10`} alt="cel"/>
+    {!light&&<img src={Stars} alt="stars" className='stars w-56 h-56 top-10 transition-all float-left ml-40 rotate-90 scale-75'/>}  
+    {light&& <img src={Birds} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left ml-40 mt-12 scale-75'/>} 
+    <br/>  
+    {!light&& <img src={Stars} alt="stars" className='stars w-48 h-56 top-10 transition-all float-left scale-75 ml-10 mt-8'/>}
     </div>
   )
 }

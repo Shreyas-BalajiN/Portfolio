@@ -7,7 +7,7 @@ import Stars from '../Assets/Stars.png'
 import Birds from '../Assets/Birds.png'
 import { useEffect } from 'react'
 import {SiGithub, SiLinkedin, SiMaildotru} from 'react-icons/si'
-export default function Land() {
+ const Land=({light, setLight})=>{
   const [bg,changeBg]=useState(true);
   const [cel, changeCel]=useState(true);
   const [bri, changeBri]=useState(true);
@@ -15,7 +15,7 @@ export default function Land() {
   const [isVisible, setIsVisible] = useState(false);
   const [dusk, setdusk]=useState(false);
   const [dawn, setDawn]=useState(false);
-  const [light, setLight]= useState(true);
+  
   useEffect(() => {
     console.log(window.innerWidth)
     const timeout = setTimeout(() => {
@@ -75,3 +75,4 @@ export default function Land() {
     </div>
   )
 }
+export default Land;
